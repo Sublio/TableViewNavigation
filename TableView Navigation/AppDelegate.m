@@ -21,9 +21,11 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
+    DMDirectoryViewController* vc = [[DMDirectoryViewController alloc]initWithFolderPath:@"/Users/robert/Desktop/Projects"];
     
+    UINavigationController* navController = [[UINavigationController alloc] initWithRootViewController:vc];
     
-    
+    self.window.rootViewController = navController;
     
     return YES;
 }
