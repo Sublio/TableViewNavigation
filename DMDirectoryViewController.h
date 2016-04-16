@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DMDirectoryViewController.h
 //  TableView Navigation
 //
 //  Created by sublio on 16/04/16.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface DMDirectoryViewController : UITableViewController
+
+- (id) initWithFolderPath: (NSString*) path;
+
 
 
 @end
-

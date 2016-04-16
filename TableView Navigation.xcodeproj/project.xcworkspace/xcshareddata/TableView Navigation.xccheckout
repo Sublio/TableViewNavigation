@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B5C5B0D6-8085-403C-9661-603D50A22D2B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TableView Navigation</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C7A1F017AB82192F8176B5D2EE42FF478A574EBA</key>
+		<string>github.com:Sublio/TableViewNavigation.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TableView Navigation.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C7A1F017AB82192F8176B5D2EE42FF478A574EBA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:Sublio/TableViewNavigation.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C7A1F017AB82192F8176B5D2EE42FF478A574EBA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C7A1F017AB82192F8176B5D2EE42FF478A574EBA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TableView%20Navigation</string>
+		</dict>
+	</array>
+</dict>
+</plist>
