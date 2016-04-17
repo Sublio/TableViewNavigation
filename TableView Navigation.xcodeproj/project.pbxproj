@@ -10,6 +10,7 @@
 		8DA920461CC28EAD00F40AD4 /* case-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DA920441CC28EAD00F40AD4 /* case-icon.png */; };
 		8DA920471CC28EAD00F40AD4 /* Document-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DA920451CC28EAD00F40AD4 /* Document-icon.png */; };
 		8DA9204A1CC28F2C00F40AD4 /* DMDirectoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA920491CC28F2C00F40AD4 /* DMDirectoryViewController.m */; };
+		8DAA5BEB1CC3FABB002DEC67 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DAA5BEA1CC3FABB002DEC67 /* Default-568h@2x.png */; };
 		8DBFE4761CC28444001EC12A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBFE4751CC28444001EC12A /* main.m */; };
 		8DBFE4791CC28444001EC12A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBFE4781CC28444001EC12A /* AppDelegate.m */; };
 		8DBFE4811CC28445001EC12A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DBFE4801CC28445001EC12A /* Images.xcassets */; };
@@ -31,6 +32,7 @@
 		8DA920451CC28EAD00F40AD4 /* Document-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Document-icon.png"; sourceTree = "<group>"; };
 		8DA920481CC28F2C00F40AD4 /* DMDirectoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMDirectoryViewController.h; path = ../DMDirectoryViewController.h; sourceTree = "<group>"; };
 		8DA920491CC28F2C00F40AD4 /* DMDirectoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMDirectoryViewController.m; path = ../DMDirectoryViewController.m; sourceTree = "<group>"; };
+		8DAA5BEA1CC3FABB002DEC67 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8DBFE4701CC28444001EC12A /* TableView Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TableView Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DBFE4741CC28444001EC12A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DBFE4751CC28444001EC12A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		8DBFE4671CC28444001EC12A = {
 			isa = PBXGroup;
 			children = (
+				8DAA5BEA1CC3FABB002DEC67 /* Default-568h@2x.png */,
 				8DBFE4721CC28444001EC12A /* TableView Navigation */,
 				8DBFE48C1CC28445001EC12A /* TableView NavigationTests */,
 				8DBFE4711CC28444001EC12A /* Products */,
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DA920471CC28EAD00F40AD4 /* Document-icon.png in Resources */,
+				8DAA5BEB1CC3FABB002DEC67 /* Default-568h@2x.png in Resources */,
 				8DA920461CC28EAD00F40AD4 /* case-icon.png in Resources */,
 				8DBFE4811CC28445001EC12A /* Images.xcassets in Resources */,
 			);

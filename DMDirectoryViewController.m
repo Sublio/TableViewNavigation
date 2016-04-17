@@ -52,11 +52,39 @@
     
     self.navigationItem.title = [self.path lastPathComponent];
     
+    if ([self.navigationController.viewControllers count] >1){
+        
+        UIBarButtonItem* item = [[UIBarButtonItem alloc]initWithTitle:@"BackToRoot" style:UIBarButtonItemStylePlain target:self action:@selector(actionBackToRoot:)];
+        
+        self.navigationItem.rightBarButtonItem = item;
+    }
+    
+    
+}
+
+-(void) dealloc {
+    
+    NSLog(@"controller with path %@ has deallocated", self.path);
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    
+    NSLog(@"path = %@", self.path);
+    NSLog(@"view controllers on stack = %d", [self.navigationController.viewControllers count]);
+    NSLog(@"index on stack %d", [self.navigationController.viewControllers indexOfObject:self]);
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+#pragma  mark - Actions
+
+-(void) actionBackToRoot: (UIBarButtonItem*) sender {
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 
@@ -124,6 +152,11 @@
     if ([self isDirectoryAtIndexPath:indexPath]){
         
         
+        NSString* fileName = [self.contents objectAtIndex:indexPath.row];
+        NSString* path = [self.path stringByAppendingPathComponent:fileName];
+        
+        DMDirectoryViewController* vc = [[DMDirectoryViewController alloc]initWithFolderPath:path];
+        [self.navigationController pushViewController:vc animated:YES];
         
     }
 }
