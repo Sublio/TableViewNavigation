@@ -10,7 +10,10 @@
 
 @interface DMDirectoryViewController : UITableViewController
 
+@property (strong, nonatomic) NSString* path;
+
 - (id) initWithFolderPath: (NSString*) path;
+
 
 
 

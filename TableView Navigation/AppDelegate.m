@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "DMDirectoryViewController.h"
+//#import "DMDirectoryViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    /*
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -26,7 +27,7 @@
     UINavigationController* navController = [[UINavigationController alloc] initWithRootViewController:vc];
     
     self.window.rootViewController = navController;
-    
+    */
     return YES;
 }
 

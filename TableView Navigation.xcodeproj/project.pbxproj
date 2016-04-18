@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8DA6F0E31CC530FB0022D5C7 /* Storyboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA6F0E21CC530FB0022D5C7 /* Storyboard_iPhone.storyboard */; };
 		8DA920461CC28EAD00F40AD4 /* case-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DA920441CC28EAD00F40AD4 /* case-icon.png */; };
 		8DA920471CC28EAD00F40AD4 /* Document-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DA920451CC28EAD00F40AD4 /* Document-icon.png */; };
 		8DA9204A1CC28F2C00F40AD4 /* DMDirectoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA920491CC28F2C00F40AD4 /* DMDirectoryViewController.m */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8DA6F0E21CC530FB0022D5C7 /* Storyboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPhone.storyboard; sourceTree = "<group>"; };
 		8DA920441CC28EAD00F40AD4 /* case-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "case-icon.png"; sourceTree = "<group>"; };
 		8DA920451CC28EAD00F40AD4 /* Document-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Document-icon.png"; sourceTree = "<group>"; };
 		8DA920481CC28F2C00F40AD4 /* DMDirectoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMDirectoryViewController.h; path = ../DMDirectoryViewController.h; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				8DBFE4801CC28445001EC12A /* Images.xcassets */,
 				8DA920431CC28EAD00F40AD4 /* Images */,
 				8DBFE4731CC28444001EC12A /* Supporting Files */,
+				8DA6F0E21CC530FB0022D5C7 /* Storyboard_iPhone.storyboard */,
 			);
 			path = "TableView Navigation";
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			files = (
 				8DA920471CC28EAD00F40AD4 /* Document-icon.png in Resources */,
 				8DAA5BEB1CC3FABB002DEC67 /* Default-568h@2x.png in Resources */,
+				8DA6F0E31CC530FB0022D5C7 /* Storyboard_iPhone.storyboard in Resources */,
 				8DA920461CC28EAD00F40AD4 /* case-icon.png in Resources */,
 				8DBFE4811CC28445001EC12A /* Images.xcassets in Resources */,
 			);

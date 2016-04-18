@@ -10,7 +10,7 @@
 
 @interface DMDirectoryViewController ()
 
-@property (strong, nonatomic) NSString* path;
+
 @property (strong, nonatomic) NSArray* contents;
 
 @end
@@ -26,19 +26,6 @@
     if (self){
         
         self.path = path;
-        
-        
-        NSError* error = nil;
-        
-        self.contents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:self.path error:&error];
-        
-        
-        if (error) {
-            
-            
-            NSLog(@"%@", [error localizedDescription]);
-        }
-        
     }
     
     return self;
@@ -46,8 +33,32 @@
 }
 
 
+- (void) setPath:(NSString *)path{
+    
+    _path = path;
+    
+    
+    NSError* error = nil;
+    
+    self.contents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:self.path error:&error];
+    
+    
+    if (error) {
+        
+        
+        NSLog(@"%@", [error localizedDescription]);
+    }
+    
+    [self.tableView reloadData];
+    
+    self.navigationItem.title = [self.path lastPathComponent];
+    
+}
+
+
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
     self.navigationItem.title = [self.path lastPathComponent];
@@ -57,6 +68,13 @@
         UIBarButtonItem* item = [[UIBarButtonItem alloc]initWithTitle:@"BackToRoot" style:UIBarButtonItemStylePlain target:self action:@selector(actionBackToRoot:)];
         
         self.navigationItem.rightBarButtonItem = item;
+    }
+    
+    
+    if (!self.path){
+        
+        
+        self.path = @"/Users/robert/Desktop/Projects";
     }
     
     
