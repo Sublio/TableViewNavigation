@@ -63,20 +63,26 @@
     
     self.navigationItem.title = [self.path lastPathComponent];
     
-    if ([self.navigationController.viewControllers count] >1){
-        
-        UIBarButtonItem* item = [[UIBarButtonItem alloc]initWithTitle:@"BackToRoot" style:UIBarButtonItemStylePlain target:self action:@selector(actionBackToRoot:)];
-        
-        self.navigationItem.rightBarButtonItem = item;
-    }
-    
-    
     if (!self.path){
         
         
         self.path = @"/Users/robert/Desktop/Projects";
     }
     
+    
+}
+
+
+- (void) viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+    
+    if ([self.navigationController.viewControllers count] >1){
+        
+        UIBarButtonItem* item = [[UIBarButtonItem alloc]initWithTitle:@"BackToRoot" style:UIBarButtonItemStylePlain target:self action:@selector(actionBackToRoot:)];
+        
+        self.navigationItem.rightBarButtonItem = item;
+    }
     
 }
 
@@ -173,7 +179,15 @@
         NSString* fileName = [self.contents objectAtIndex:indexPath.row];
         NSString* path = [self.path stringByAppendingPathComponent:fileName];
         
-        DMDirectoryViewController* vc = [[DMDirectoryViewController alloc]initWithFolderPath:path];
+        //DMDirectoryViewController* vc = [[DMDirectoryViewController alloc]initWithFolderPath:path];
+        //[self.navigationController pushViewController:vc animated:YES];
+        
+        UIStoryboard* storyBoard = self.storyboard;
+        
+        DMDirectoryViewController* vc = [storyBoard instantiateViewControllerWithIdentifier:@"DMDirectoryViewController"];
+        
+        vc.path = path;
+        
         [self.navigationController pushViewController:vc animated:YES];
         
     }

@@ -20,10 +20,10 @@
             </objects>
             <point key="canvasLocation" x="-147" y="-267.75"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Directory View Controller-->
         <scene sceneID="Me0-kt-Ez7">
             <objects>
-                <tableViewController id="KnT-Sx-57f" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DMDirectoryViewController" id="KnT-Sx-57f" customClass="DMDirectoryViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="QIv-Ip-m74">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
