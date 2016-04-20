@@ -25,6 +25,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="DMDirectoryViewController" id="KnT-Sx-57f" customClass="DMDirectoryViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="QIv-Ip-m74">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -43,8 +44,16 @@
                     <navigationItem key="navigationItem" id="iIu-eY-rLE"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Miq-Ak-BKs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <barButtonItem title="Item" id="v3e-9h-eCJ">
+                    <connections>
+                        <segue destination="KnT-Sx-57f" kind="push" identifier="navigateDeep" id="0Np-gO-lgd"/>
+                    </connections>
+                </barButtonItem>
             </objects>
             <point key="canvasLocation" x="718.5" y="-267.75"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="tqn-E3-AJf"/>
+    </inferredMetricsTieBreakers>
 </document>

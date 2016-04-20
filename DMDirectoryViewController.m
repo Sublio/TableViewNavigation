@@ -183,15 +183,40 @@
         //[self.navigationController pushViewController:vc animated:YES];
         
         UIStoryboard* storyBoard = self.storyboard;
-        
+        /*
         DMDirectoryViewController* vc = [storyBoard instantiateViewControllerWithIdentifier:@"DMDirectoryViewController"];
         
         vc.path = path;
         
         [self.navigationController pushViewController:vc animated:YES];
+        */
         
+        [self performSegueWithIdentifier:@"navigateDeep" sender:nil];
     }
 }
+
+
+#pragma  mark - Segue
+
+
+- (BOOL) shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
+    
+    NSLog(@"%@", identifier);
+    
+    return YES;
+    
+}
+
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    
+    NSLog(@"prepareForSegue %@", segue.identifier);
+    DMDirectoryViewController* vc = segue.destinationViewController;
+    
+}
+
+
 
 
 @end
