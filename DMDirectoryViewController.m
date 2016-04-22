@@ -12,6 +12,7 @@
 
 
 @property (strong, nonatomic) NSArray* contents;
+@property (strong, nonatomic) NSString* selectedPath;
 
 @end
 
@@ -190,6 +191,7 @@
         
         [self.navigationController pushViewController:vc animated:YES];
         */
+        self.selectedPath = path;
         
         [self performSegueWithIdentifier:@"navigateDeep" sender:nil];
     }
@@ -213,6 +215,7 @@
     
     NSLog(@"prepareForSegue %@", segue.identifier);
     DMDirectoryViewController* vc = segue.destinationViewController;
+    vc.path = self.selectedPath;
     
 }
 
